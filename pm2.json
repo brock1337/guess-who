@@ -1,0 +1,14 @@
+{
+  "apps": [{
+    "watch": ["src", "index.js"],
+    "name": "server",
+    "script": "./src/server/index.js",
+    "instances": "1",
+    "exec_mode": "cluster",
+    "autorestart": true,
+    "max_restarts": 5,
+    "log_date_format": "YYYY-MM-DD HH:mm Z",
+    "error_file": "bin/logs/error.log",
+    "out_file": "bin/logs/out.log"
+  }]
+}
